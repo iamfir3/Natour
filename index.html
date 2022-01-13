@@ -12,6 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link">About Natours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Your benefits</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Popular tours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Book now</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img src="./assets/img/logo-white.png" alt="" class="header__logo">
@@ -102,14 +123,14 @@
             </div>
         </section>
 
-        <section class="section-tours">
-            <div class="u-center-text u-margin-bottom-big">
+        <section class="section-tours" >
+            <div class="u-center-text">
                 <h2 class="heading-secondary">
                     Most popular tours
                 </h2>
             </div>
 
-            <div class="row">
+            <div class="row" id="section-tours" style="padding-top:8rem;">
                 <div class="col-1-of-3">
                     <div class="card">
                         <div class="card__side card__side--front">
@@ -137,7 +158,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +190,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -201,7 +222,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -312,14 +333,41 @@
         <div class="row">
             <div class="col-1-of-2">
                 <div class="footer__navigation">
-                    <ul class="footer-list"></ul>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Privacy policy</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="col-1-of-2">
-
+                <p class="footer__copyright">
+                    Built by <a href="" class="footer__link">GNOL</a>
+                </p>
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="./assets/img/nat-8.jpg" alt="" class="popup__img">
+                <img src="./assets/img/nat-9.jpg" alt="" class="popup__img">
+            </div>
+
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read the terms before booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam cumque fugit optio, nemo, soluta blanditiis vel ratione ad reiciendis consectetur perferendis harum, at unde recusandae. Nulla neque illum id.
+                </p>
+                <a href="" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
     <!-- <section class="grid-test">
         <div class="row">
             <div class="col-1-of-2">
