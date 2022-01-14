@@ -912,6 +912,9 @@ body {
   .popup__left {
     width: calc(100% / 3);
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     width: calc(100% /3 * 2);
     display: table-cell;
