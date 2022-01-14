@@ -666,7 +666,11 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 37rem;
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      max-width: 38rem;
       padding: 0 3rem; } }
   .row::after {
     content: "";
@@ -812,6 +816,9 @@ body {
   list-style: none;
   text-align: center;
   width: 100%; }
+  @media (max-width: 56.25em) {
+    .navigation__list {
+      left: 48%; } }
 
 .navigation__item {
   margin: 1rem; }

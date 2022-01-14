@@ -70,6 +70,10 @@
         list-style: none;
         text-align: center;
         width:100%;
+
+        @include respond(tab-port){
+            left: 48%;
+        }
     }
 
     &__item{
